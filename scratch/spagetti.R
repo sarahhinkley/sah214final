@@ -21,4 +21,4 @@ ggplot(
         y = K
     )
 ) +
-  geom_line() 
+  geom_point() 
