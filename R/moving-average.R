@@ -3,6 +3,7 @@ moving_average <- function(df, num_weeks) {
   # Initialize a tibble to contain the results
   result <- tibble(
     window_start = seq(ymd(df$Sample_Date[1]), ymd(df$Sample_Date[nrow(df)]), by = paste(num_weeks, "weeks")),
+    site = df$Sample_ID[1],
     k_mgl = NA,
     mg_mgl = NA,
     ca_mgl = NA,
