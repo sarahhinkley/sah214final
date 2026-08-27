@@ -37,7 +37,6 @@ ggplot(
   theme_bw() + 
   labs(
     x = "Years",
-    y = "Concentration (mg/L)",
     color = "Site"
   )
 
